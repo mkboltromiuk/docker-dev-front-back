@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 3000
 
 # Ustawienie komendy startowej
-CMD ["node","server.js"]
+CMD ["npx", "nodemon", "server/server.js"]

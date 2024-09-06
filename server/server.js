@@ -13,6 +13,10 @@ app.get('/api/message', (req, res) => {
     res.json({ message: 'Hello from Express!' });
 });
 
+app.get('/', (req, res) => {
+    res.json({ message: 'witaj!' });
+});
+
 // Uruchomienie serwera
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
