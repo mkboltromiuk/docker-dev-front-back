@@ -19,6 +19,8 @@ services:
             dockerfile: Dockerfile
         ports:
             - '3000:3000' # Mapowanie portu dla Express.js
+        volumes:
+            - ./server:/app
         networks:
             - app-network
 
